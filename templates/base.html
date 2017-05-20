@@ -1,0 +1,17 @@
+{% load static %}
+{% load static %}
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>{% block titlename %}{% endblock titlename %} Sharkbidz</title>
+	{%block morecss%}{%endblock morecss%}
+</head>
+<body>
+	{% block javascript %}
+	{% endblock javascript %}
+	<header>
+	</header>
+	<main>
+		{% block content %}{% endblock content %}
+	</main>
+</body>

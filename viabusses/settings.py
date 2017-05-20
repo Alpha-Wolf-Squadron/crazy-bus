@@ -25,12 +25,13 @@ SECRET_KEY = 'v^sa5zk384v9m5*9e2w34=blz8td$u0((ov+%v-7d%^q#gy9nk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'192.168.33.10']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'busalgo.apps.BusalgoConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'viabusses.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, "templates")],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -66,6 +67,11 @@ TEMPLATES = [
         },
     },
 ]
+TEMPLATE_DIRS = (
+    os.path.join(BASE_DIR, 'busalgo', 'templates'),
+    os.path.join(BASE_DIR, 'templates'),
+)
+
 
 WSGI_APPLICATION = 'viabusses.wsgi.application'
 
