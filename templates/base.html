@@ -1,5 +1,4 @@
 {% load static %}
-{% load static %}
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -7,6 +6,7 @@
 	{%block morecss%}{%endblock morecss%}
 </head>
 <body>
+<script type="text/javascript" src="{% static '/js/paperjs/dist/paper-full.js' %}"></script>
 	{% block javascript %}
 	{% endblock javascript %}
 	<header>
