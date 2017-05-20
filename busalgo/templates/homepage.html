@@ -5,9 +5,12 @@
 	<link rel="stylesheet" href="{% static 'css/homepage.css' %}">
 {% endblock %}
 {% block javascript %}
+<!--<script type="text/javascript" src="{% static 'js/frontpage.js' %}"></script>-->
+<script type="text/x-paperscript" canvas="myCanvas" src="{% static 'js/canvascool.js' %}"></script>
 {% endblock %}
 {% block content %}
 <div class="cuteblock">
-	<h1>We're Back: A Dinosaur Story!</h1>
+	<h1>HOLA!</h1>
+	<canvas id="myCanvas" resize></canvas>
 </div>
 {%endblock%}
