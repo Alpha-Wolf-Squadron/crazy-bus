@@ -6,11 +6,12 @@
 {% endblock %}
 {% block javascript %}
 <!--<script type="text/javascript" src="{% static 'js/frontpage.js' %}"></script>-->
+<script type="text/javascript" canvas="myCanvas" src="{% static 'js/lazyjson.js' %}"></script>
 <script type="text/javascript" canvas="myCanvas" src="{% static 'js/canvascool.js' %}"></script>
+
 {% endblock %}
 {% block content %}
 <div class="cuteblock">
 	<h1>HOLA!</h1>
-	<canvas id="myCanvas" resize></canvas>
 </div>
 {%endblock%}
