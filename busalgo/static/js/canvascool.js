@@ -1,14 +1,11 @@
+let App = new PIXI.Application(window.innerWidth,window.innerHeight, {antialias:true})
+document.body.appendChild(App.view)
 
-function drawCanvas(){
-	console.log("DERP!");
-	var path = new Path();
-	path.strokeColor = '#000000'
-	var start = new Point(100, 100);
-	path.moveTo(start);
-	path.lineTo(start + [ 100, -50 ]);
-}
+var graphics = new PIXI.Graphics()
 
 
 
+document.addEventListener('DOMContentLoaded',()=>{
+	console.log("WOOOO!");
 
-	drawCanvas()
+})
